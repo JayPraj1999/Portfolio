@@ -1,0 +1,26 @@
+please provide me all code in responsive. on mouse hover it will be like skyblue.
+my protfolio is based on dark black and white theam.
+
+1) First create a navigation bar or Nav Bar. Menu having name in left side corner as "Jay" which is my logo if someone click on this logo resume will be downloaded.
+at center having links like Home, About, Resume, Project, Technoloy, Testimonials, Contact. If we click any of them it smoothly scroll down as per request.
+at right side corner having small logos that represt as follow resume download, github, linked in. and also EMail logo if we click on email logo it will be redirect to gmail acoount ang my Mailing adress is auto fill "jayprakashprajapati1999@gmail.com" 
+
+2) on head/dashboard/ Hero Section having my name "Jayprakash". and provode some basic details in fantasic look. after that Resume Download link provide.
+background is darkmode and look like hacker hoodie person without showing face. If we click Home section it will be shown at Hero section open
+
+3) If we click on about it smoothly scroll down and show about section. about section having my image in left side(my image is in black) show little 3D image type.
+this image is left side and right side provide some personal information(This information i will writting later) like my name, Date of birth, age, mobile, email, city, degree and little summary about coding skill.
+
+4) At Resume section, First provide heading that what is my Vision(Objective). After that it shows my personal detail, Education Qualification like schooling, Diploma, and Degree (details provide later).
+
+5)At Project section, provide imagies for any if we hover it shows website name and Visit link if we click on visit it will be redirect to that website.
+
+6) at Technology section put logo of some technology like HTML5, CSS3, Bootstrap, Wordpress, MySQL, ReactJs, NodeJs etc.
+
+7) At Testimonials, put some comments and below comment show image of any person in round shape and below image it shows and and his designation and company name.
+that comments will be move from left to right or right to left. it will be in auto mode and also provide left and right move button.
+
+8) AT contact section, it will divided into 2 part. at left side it shows logo and its name like location logo and Title Address and so on, Mobile, Email, and bellow that show map of that location,
+at right side it shows feedback section, having Title Feedback, and then show Input Text for First Name, Last Name, Mobile, Email, And Message.
+
+9) At footer section provide just designed By "Jayprakas", and copyright claim title, after that Follow us logo like Github, Linkedin, Youtube, Facebook, Instagram, 
