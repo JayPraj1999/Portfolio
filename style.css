@@ -39,11 +39,13 @@ section {
   color: white;
   margin: 0 10px;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s, text-shadow 0.3s;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
 }
 
 .navbar a:hover {
   color: skyblue;
+  text-shadow: 0 0 8px skyblue;
 }
 
 .nav-left .logo {
@@ -61,25 +63,41 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   height: 100vh;
   position: relative;
-  background: url('assets/hacker-bg.jpg') no-repeat center center/cover;
+  padding: 100px 20px 60px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.hero-image img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
 
 .hero-content {
-  z-index: 2;
+  max-width: 700px;
 }
 
-.hero h1 {
-  font-size: 3rem;
+.hero-content h1 {
+  font-size: 4rem;
   color: white;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin: 10px 0 20px;
+.hero-content p {
+  font-size: 1.5rem;
+  margin: 30px 0px 50px;
   color: #ccc;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
 }
 
 .btn {
@@ -90,35 +108,46 @@ section {
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
 }
 
 .btn:hover {
   background-color: skyblue;
   color: black;
+  text-shadow: none;
 }
 
 /* About Section */
 .about-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 50px;
 }
 
 .about-img img {
-  width: 300px;
+  width: 400px;
+  height: 550px;
   border-radius: 10px;
   transform: rotateY(10deg);
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+}
+
+.about-text h1{
+      padding-left: 50px; 
 }
 
 .about-text ul {
   list-style: none;
-  padding: 0;
+  padding: 50px;
+  font-size: 20px;
+  
 }
 
 .about-text ul li {
   margin-bottom: 10px;
   color: #ddd;
+  padding-bottom: 20px;
+  font-weight: 700;
 }
 
 /* Resume */
@@ -278,10 +307,12 @@ footer {
   margin: 0 10px;
   text-decoration: none;
   color: white;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
 }
 
 .footer-social a:hover {
   color: skyblue;
+  text-shadow: 0 0 8px skyblue;
 }
 
 /* Responsive */
@@ -297,9 +328,19 @@ footer {
   }
 
   .about-container,
-  .contact {
+  .contact,
+  .hero-container {
     flex-direction: column;
     text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 250px;
   }
 
   .project-gallery {

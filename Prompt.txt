@@ -6,7 +6,8 @@ at center having links like Home, About, Resume, Project, Technoloy, Testimonial
 at right side corner having small logos that represt as follow resume download, github, linked in. and also EMail logo if we click on email logo it will be redirect to gmail acoount ang my Mailing adress is auto fill "jayprakashprajapati1999@gmail.com" 
 
 2) on head/dashboard/ Hero Section having my name "Jayprakash". and provode some basic details in fantasic look. after that Resume Download link provide.
-background is darkmode and look like hacker hoodie person without showing face. If we click Home section it will be shown at Hero section open
+background is darkmode and look like hacker hoodie person without showing face. If we click Home section it will be shown at Hero section open. At hero section I need all the text from left side and i need to show my image at left side. 
+
 
 3) If we click on about it smoothly scroll down and show about section. about section having my image in left side(my image is in black) show little 3D image type.
 this image is left side and right side provide some personal information(This information i will writting later) like my name, Date of birth, age, mobile, email, city, degree and little summary about coding skill.

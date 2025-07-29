@@ -54,3 +54,22 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+// Adjust hero layout to show image on left and text on right
+const heroSection = document.querySelector('#hero');
+if (heroSection) {
+  heroSection.innerHTML = `
+    <div class="hero-container">
+      <div class="hero-image">
+        <img src="assets/jay-black.png" alt="Jay Image">
+      </div>
+      <div class="hero-content">
+        <h1>Jayprakash Prajapati</h1>
+        <p>Frontend Developer | Tech Enthusiast | Tutor | Coder</p>
+        <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
+      </div>
+    </div>
+  `;
+} else {
+  console.warn("#hero section not found");
+}
