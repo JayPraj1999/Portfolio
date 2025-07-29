@@ -134,6 +134,7 @@ section {
 
 .about-text h1{
       padding-left: 50px; 
+      font-size: 30px;
 }
 
 .about-text ul {
@@ -151,20 +152,42 @@ section {
 }
 
 /* Resume */
-.resume h2 {
+.resume h1 {
   margin-bottom: 20px;
+  font-size: 40px;
 }
 
 .resume-details ul {
   list-style: square;
-  padding-left: 20px;
+  padding-left: 50px;
+  font-weight: 700;
 }
+
+.resume p{
+  font-weight: 600;
+}
+
+li.education{
+  padding-left: 75px;
+  list-style: none;
+}
+
+.resume h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
 
 /* Projects */
 .project-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 120px;
+}
+
+.projects h2{
+  font-size: 40px;
+  margin-bottom: 50px;
 }
 
 .project-card {
@@ -172,6 +195,7 @@ section {
   width: 300px;
   overflow: hidden;
   border-radius: 10px;
+  
 }
 
 .project-card img {
@@ -209,15 +233,21 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 60px;
   margin-top: 20px;
 }
 
+.technology h2{
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
 .tech-logos img {
-  width: 80px;
-  height: auto;
-  filter: brightness(0) invert(1);
+  width: 200px;
+  height: 250px;
   transition: transform 0.3s;
+  margin-bottom: 50px;
+  margin-left: 40px;
 }
 
 .tech-logos img:hover {
@@ -229,13 +259,19 @@ section {
 .testimonial-slider {
   display: flex;
   align-items: center;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
+  gap: 70px;
+  overflow-x: hidden;
+  margin-left: 50px;
+  /* scroll-behavior: smooth; */
+}
+
+.testimonials h2{
+  font-size: 40px;
+  margin-bottom: 50px;
 }
 
 .testimonial {
-  min-width: 300px;
+  width: 300px;
   background-color: #222;
   padding: 20px;
   border-radius: 10px;
@@ -245,8 +281,8 @@ section {
 }
 
 .testimonial img {
-  width: 60px;
-  height: 60px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin-top: 10px;
 }

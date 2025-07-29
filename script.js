@@ -1,28 +1,25 @@
-// script.js
-
 // Smooth scroll for nav links
 document.querySelectorAll('.nav-center a').forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();
     const targetId = this.getAttribute('href').substring(1);
-    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
   });
 });
 
 // Testimonial Slider - Auto scroll
-const slider = document.querySelector('.testimonial-slider');
-let scrollAmount = 0;
+// const slider = document.querySelector('.testimonial-slider');
+// let scrollAmount = 0;
 
-function autoScrollTestimonials() {
-  if (!slider) return;
-  scrollAmount += 1;
-  if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
-    scrollAmount = 0;
-  }
-  slider.scrollTo({ left: scrollAmount, behavior: 'smooth' });
-}
-
-setInterval(autoScrollTestimonials, 50);
+// function autoScrollTestimonials() {
+//   if (!slider) return;
+//   if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+//     slider.scrollTo({ left: 0, behavior: 'smooth' });
+//   } else {
+//     slider.scrollBy({ left: 1, behavior: 'smooth' });
+//   }
+// }
+// setInterval(autoScrollTestimonials, 50);
 
 // Manual slider controls
 const slideLeft = document.querySelector('.slide-left');
@@ -38,7 +35,7 @@ if (slideLeft && slideRight) {
   });
 }
 
-// Optional: highlight current nav link on scroll
+// Highlight current nav link
 window.addEventListener('scroll', () => {
   const sections = document.querySelectorAll('section');
   const scrollY = window.scrollY + 200;
@@ -50,12 +47,12 @@ window.addEventListener('scroll', () => {
 
     if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
       document.querySelectorAll('.nav-center a').forEach(a => a.classList.remove('active'));
-      document.querySelector(`.nav-center a[href="#${id}"]`).classList.add('active');
+      document.querySelector(`.nav-center a[href="#${id}"]`)?.classList.add('active');
     }
   });
 });
 
-// Adjust hero layout to show image on left and text on right
+// Hero layout
 const heroSection = document.querySelector('#hero');
 if (heroSection) {
   heroSection.innerHTML = `
@@ -70,6 +67,4 @@ if (heroSection) {
       </div>
     </div>
   `;
-} else {
-  console.warn("#hero section not found");
 }
