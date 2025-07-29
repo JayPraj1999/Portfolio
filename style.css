@@ -294,13 +294,22 @@ li.education{
   gap: 30px;
 }
 
+.contact h2{
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.contact p{
+  font-weight: 650;
+}
+
 .contact-left, .contact-right {
   flex: 1;
 }
 
 .contact-left iframe {
-  width: 100%;
-  height: 200px;
+  width: 80%;
+  height: 250px;
   border: 0;
   margin-top: 20px;
 }
@@ -311,13 +320,25 @@ li.education{
   gap: 10px;
 }
 
-.contact-right input,
-.contact-right textarea {
-  padding: 10px;
+.contact-right input
+{
+  padding: 15px;
+  margin-bottom: 10px;
   border: 1px solid #444;
   background-color: #111;
   color: white;
 }
+
+.contact-right textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #444;
+  background-color: #111;
+  color: white;
+  height: 150px;
+  overflow-y: auto;
+}
+
 
 .contact-right button {
   background-color: skyblue;
