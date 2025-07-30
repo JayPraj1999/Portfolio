@@ -285,7 +285,9 @@ li.education{
   height: 150px;
   border-radius: 50%;
   margin-top: 10px;
+  box-shadow: 10px;
 }
+
 
 /* Contact */
 .contact {
