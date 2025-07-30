@@ -7,38 +7,25 @@ document.querySelectorAll('.nav-center a').forEach(link => {
   });
 });
 
-// Testimonial Slider - Auto scroll
-// const slider = document.querySelector('.testimonial-slider');
-// let scrollAmount = 0;
-
-// function autoScrollTestimonials() {
-//   if (!slider) return;
-//   if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
-//     slider.scrollTo({ left: 0, behavior: 'smooth' });
-//   } else {
-//     slider.scrollBy({ left: 1, behavior: 'smooth' });
-//   }
-// }
-// setInterval(autoScrollTestimonials, 50);
-
-// Manual slider controls
+// Testimonial slider buttons
+const slider = document.querySelector('.testimonial-slider');
 const slideLeft = document.querySelector('.slide-left');
 const slideRight = document.querySelector('.slide-right');
 
-if (slideLeft && slideRight) {
+if (slider && slideLeft && slideRight) {
   slideLeft.addEventListener('click', () => {
-    slider.scrollBy({ left: -300, behavior: 'smooth' });
+    slider.scrollBy({ left: -320, behavior: 'smooth' });
   });
 
   slideRight.addEventListener('click', () => {
-    slider.scrollBy({ left: 300, behavior: 'smooth' });
+    slider.scrollBy({ left: 320, behavior: 'smooth' });
   });
 }
 
-// Highlight current nav link
+// Active section highlight in navbar
 window.addEventListener('scroll', () => {
   const sections = document.querySelectorAll('section');
-  const scrollY = window.scrollY + 200;
+  const scrollY = window.scrollY + 150;
 
   sections.forEach(section => {
     const sectionTop = section.offsetTop;
