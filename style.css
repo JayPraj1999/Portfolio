@@ -398,9 +398,8 @@ footer {
   border-top: 1px solid #333;
 }
 
-.footer-social img {
-  vertical-align: middle;
-  margin-right: 5px;
+.footer-social i {
+  margin-right: 8px;
 }
 
 .footer-social a {
